@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Titlefont;
+    src: url('Fonts/basictitlefont.ttf');
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-y: hidden;
+}
+
+#topnav {
+    background-color: black;
+    overflow: hidden;
+    padding-top: 10px;
+    z-index: 2;
+}
+#title{
+    font-family:Titlefont;
+    font-weight: bold;
+    font-size: 35px;
+    color:white;
+    padding:20px;
+    padding-right: 50px;
+}
+.onu,.dollar,.recherche {
+    color: white;
+    font-family: Titlefont;
+    padding: 40px 40px;
+    font-size: 32px;
+}
+
+#topnav a:hover {
+    background-color: white;
+    color: black;
+}
+
+#map {
+    height: 100%;
+    z-index: 1;
+}
+
+#info {
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 18px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    left: 1650px;
+    border: solid 1px black;
+    z-index: 2;
+}
+
+#info ul {
+    color: black;
+    font-family: Titlefont;
+}
+
+#events {
+    
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    font-family: Titlefont;
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 20px 20px;
+    z-index: 2;
+}
+
+#countryName{
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+}
+
+#fiche p{
+    color:green;
+    text-align: left;
+    font-size: 35px;
+    color:black;
+    padding-left:5px;
+    font-family:Titlefont;
+}
+
+#fiche{
+    background-color:white;
+    padding-right: 50px;
+  
+}
+
+#action {
+    font-family: Titlefont;
+    font-size: 35px;
+    color:white;
+    background-color: black;
+    padding-top :10px;
+    
+}
+.attaque:hover{
+    background-color:red;
+    padding :10px 10px;
+   
+}
+.conv:hover{
+    background-color:skyblue;
+    padding :10px 10px;
+}
+#action a{
+    padding :10px 15px;
+}
