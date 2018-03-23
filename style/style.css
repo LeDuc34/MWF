@@ -1,6 +1,6 @@
 @font-face {
     font-family: Titlefont;
-    src: url('Fonts/basictitlefont.ttf');
+    src: url('fonts/basictitlefont.ttf');
 }
 
 html,
@@ -64,7 +64,7 @@ html {
 }
 
 #events {
-    
+
     position: absolute;
     top: 100px;
     left: 20px;
@@ -93,7 +93,7 @@ html {
 #fiche{
     background-color:white;
     padding-right: 50px;
-  
+
 }
 
 #action {
@@ -102,12 +102,12 @@ html {
     color:white;
     background-color: black;
     padding-top :10px;
-    
+
 }
 .attaque:hover{
     background-color:red;
     padding :10px 10px;
-   
+
 }
 .conv:hover{
     background-color:skyblue;
