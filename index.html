@@ -4,28 +4,43 @@
 <head>
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
-  <link rel="stylesheet" media="screen" type="text/css" href="style/style.css" />
-  <script type="text/javascript" src="script/animation.js"></script>
-  <script type="text/javascript" src="script/marker.js"></script>
-  <script type="text/javascript" src="script/map.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDUtavSrSGP3542E7B1hjY4W7myFAVWKdk&callback=initMap">
-  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+
   <title>MWF</title>
 </head>
-
 <body>
 
-  <div id="topnav">
-    <a id="title"> Modern World Fight
-      <a/>
-      <a class="onu">ONU</a>
-      <a class="dollar">Marche Mondial</a>
-      <a class=recherche>recherche</a>
 
-  </div>
+    <nav class="navbar navbar-expand-xl">
+      <a href="#" class"navbar-brand" id="title"> Modern World Fight</a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+          <a href="#" class="nav-link" id="onu">ONU</a>
+        </li>
+        <li class="nav-item">
+        <a href="#" class="nav-link" id="recherche">recherche</a>
+      </li>
+       <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="marche" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Marche Mondial
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="#">Acheter</a>
+      <a class="dropdown-item" href="#">Vendre</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Regarder</a>
+    </div>
+      </li>
+        </ul>
+         <img src="images/hb.png" alt="hamburger_menu" id="hamburger"onclick="changerInfo()" >
 
-
+</nav>
   <div id="info">
+
     <ul>
       <b>Argent : </b>
     </ul>
@@ -43,9 +58,14 @@
     </ul>
   </div>
 
-  <div id="events" onclick="changer()">Evenements + </div>
+<div id="map">  </div>
 
-  <div id="map"></div>
+  <script type="text/javascript" src="script/anim.js"></script>
+  <script type="text/javascript" src="script/marker.js"></script>
+  <script type="text/javascript" src="script/map.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHrAJy-dcXWmMO7wC_lvft1JjegrZ8Z6o&callback=initMap"
+  type="text/javascript"></script>
+
+  </script>
 </body>
-
 </html>

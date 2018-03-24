@@ -13,7 +13,9 @@ function initMap(){
 
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 3,
+        minZoom:3,
         center: myLatLng,
     });
+
     initMarkers("France",48.866667,2.333333,map);
 }

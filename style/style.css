@@ -14,70 +14,67 @@ html {
     overflow-y: hidden;
 }
 
-#topnav {
-    background-color: black;
-    overflow: hidden;
-    padding-top: 10px;
-    z-index: 2;
-}
-#title{
-    font-family:Titlefont;
-    font-weight: bold;
-    font-size: 35px;
-    color:white;
-    padding:20px;
-    padding-right: 50px;
-}
-.onu,.dollar,.recherche {
-    color: white;
-    font-family: Titlefont;
-    padding: 40px 40px;
-    font-size: 32px;
+.navbar {
+  background-color: black;
+
 }
 
-#topnav a:hover {
-    background-color: white;
-    color: black;
+#title{
+
+    color:white;
+    font-family: Titlefont;
+    font-weight: bold;
+    font-size: 150%;
 }
+.nav-link{
+    color: white;
+    font-family: Titlefont;
+    font-size: 150%;
+    font-weight: 400;
+}
+.nav-link:hover{
+  color:skyblue;
+}
+.navbar-nav.mr-auto{
+  padding-left: 3%;
+}
+.dropdown-menu{
+  font-family: Helvetica;
+  font-weight: 400;
+}
+
 
 #map {
     height: 100%;
     z-index: 1;
+
 }
 
 #info {
-    overflow: hidden;
     font-weight: bold;
-    font-size: 18px;
-    width: 200px;
-    height: 200px;
+    font-size: 20px;
+    width: auto;
+    height:auto;
     position: absolute;
-    top: 50px;
-    left: 1650px;
-    border: solid 1px black;
+    top: 7.5%;
+    right: 0%;
     z-index: 2;
-}
+    background-color:white;
+    display: none;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
 
 #info ul {
     color: black;
     font-family: Titlefont;
 }
 
-#events {
 
-    position: absolute;
-    top: 100px;
-    left: 20px;
-    font-family: Titlefont;
-    font-size: 25px;
-    text-decoration: underline;
-    font-weight: bold;
-    padding: 20px 20px;
-    z-index: 2;
-}
+
 
 #countryName{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica;
     color:black;
 }
 
@@ -88,6 +85,7 @@ html {
     color:black;
     padding-left:5px;
     font-family:Titlefont;
+    font-weight: 400;
 }
 
 #fiche{
@@ -98,10 +96,10 @@ html {
 
 #action {
     font-family: Titlefont;
-    font-size: 35px;
+    font-size: 30px;
     color:white;
+    padding-top: 5px;
     background-color: black;
-    padding-top :10px;
 
 }
 .attaque:hover{
@@ -115,4 +113,13 @@ html {
 }
 #action a{
     padding :10px 15px;
+}
+
+#hamburger{
+color:white;
+height: 1.5%;
+width: 1.5%;
+}
+li.nav-item{
+  padding-right: 20px;
 }
