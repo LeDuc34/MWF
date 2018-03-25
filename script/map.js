@@ -19,4 +19,5 @@ function initMap(){
 
     initMarker("France",48.866667,2.333333,map);
     initMarker("Victor",-20,-20,map);
+    initMarker("Darius",-10,20,map);
 }

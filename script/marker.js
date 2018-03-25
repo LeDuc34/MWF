@@ -37,9 +37,9 @@ function initMarker(name,lat,lng,map) {
             isOpen = 1;
         } else {
             infoWindow.close(map, marker);
-            isOpen = 0;
         }
         closeInfoWindow(marker,infoWindow,isOpen);
+        console.log(isOpen);
     });
 }
 
@@ -47,7 +47,7 @@ function initMarker(name,lat,lng,map) {
 
 function closeInfoWindow(marker,infoWindow,opened){
   if(opened==1)nbWindow++;
-  if(opened==0)nbWindow--;
+  else nbWindow--;
 
   if(nbWindow==1){
   firstMarker=marker;
@@ -59,5 +59,5 @@ function closeInfoWindow(marker,infoWindow,opened){
       firstInfoWindow = infoWindow;
       nbWindow--;
     }
-
+console.log(nbWindow);
 }
