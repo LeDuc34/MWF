@@ -1,7 +1,7 @@
 function include(fileName){
     document.write("<script type='text/javascript' src='"+fileName+"'></script>" );
   }
-  include(marker.js);
+  include("script/marker.js");
 
 
 function initMap(){
@@ -17,5 +17,6 @@ function initMap(){
         center: myLatLng,
     });
 
-    initMarkers("France",48.866667,2.333333,map);
+    initMarker("France",48.866667,2.333333,map);
+    initMarker("Victor",-20,-20,map);
 }

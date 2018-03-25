@@ -56,13 +56,13 @@ html {
     width: auto;
     height:auto;
     position: absolute;
-    top: 7.5%;
+    top: 7.2%;
     right: 0%;
     z-index: 2;
     background-color:white;
     display: none;
     padding-right: 10px;
-    padding-top: 10px;
+    padding-top: 5px;
   }
 
 #info ul {
